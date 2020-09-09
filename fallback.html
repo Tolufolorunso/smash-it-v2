@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>smashIt | 404 page</title>
+    <meta name="description" content="This is SmashIt site">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="smashIt | WeatherApp">
+    <meta name="apple-mobile-web-app-title" content="smashIt | WeatherApp">
+    <meta name="theme-color" content="#0eadf4">
+    <meta name="msapplication-navbutton-color" content="#0eadf4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+
+    <link rel="icon" sizes="128x128" href="/images/touch/icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="/images/touch/icon-128x128.png">
+    <link rel="icon" sizes="192x192" href="icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/images/icons/pwa-192x192.png">
+    <link rel="icon" sizes="310x310" href="/images/icons/tile310x310.png">
+    <link rel="icon" sizes="512x512" href="/images/icons/pwa-512x512.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/images/icons/pwa-512x512.png">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <!--Import Google Icon Font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="/css/beautify.css">
+</head>
+
+
+<body>
+    <div class="menu" id="menu">
+        <i class="fas fa-bars">X</i>
+    </div>
+    <nav class="nav active" id="nav">
+        <ul class="nav-list">
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/weather.html">Weather</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation__wrapper">
+                <div class="navigation__logo">
+                    <a href="/"><img src="./images/smashIt.png" alt="gad weather logo"></a>
+                </div>
+                <ul class="navigation__menu--item">
+                    <li class="navigation__menu--items"><a href="/">Home</a></li>
+                    <li class="navigation__menu--items"><a href="/about.html">About</a></li>
+                    <li class="navigation__menu--items"><a href="/contact.html">Contact</a></li>
+                    <li class="navigation__menu--items"><a href="/weather.html">Weather</a></li>
+                </ul>
+                <div class="icon-container">
+                    <input type="checkbox" id="navigation-toggle" class="navigation__checkbox" />
+                    <label for="navigation-toggle" class="navigation__button">
+                        <span class="navigation__icon"></span>
+                    </label>
+                </div>
+
+            </div>
+
+            <ul class="mobile__menu">
+                <li class="navigation__menu--items"><a href="/">Home</a></li>
+                <li class="navigation__menu--items"><a href="/about.html">About</a></li>
+                <li class="navigation__menu--items"><a href="/contact.html">Contact</a></li>
+                <li class="navigation__menu--items"><a href="/weather.html">Weather</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <h4>OOPS</h4>
+            <p>Currently you can not view this page offline</p>
+            <a href="/">Way to Homepage</a>
+        </div>
+    </section>
+    </header>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Copyright <span id="get-year">2020</span> | Coded by
+                <a href="http://twitter.com/developer_tolu" style="color: #fff;" target="_blank" class="coded-by"
+                    rel="noopener">Folorunso Tolulope</a>
+            </p>
+        </div>
+    </footer>
+    <div class="alert" id="alert">
+        <p id="alert-p">successfully added</p>
+    </div>
+    <script src="/js/utils.js"></script>
+</body>
+
+</html>

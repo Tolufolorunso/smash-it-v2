@@ -1,0 +1,32 @@
+{
+    "name": "Smash it",
+    "short_name": "weatherApp",
+    "description": "Weather app built with love for gad2020",
+    "lang": "en-US",
+    "icons": [{
+            "src": "./images/icons/android-72x72.png",
+            "type": "image/png",
+            "sizes": "72x72",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./images/icons/pwa-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./images/icons/pwa-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/",
+    "prefer_related_applications": false,
+    "background_color": "#0eadf4",
+    "orientation": "any",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#0eadf4"
+}

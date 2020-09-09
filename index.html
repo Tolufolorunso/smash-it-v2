@@ -1,0 +1,207 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en-gb" class="isie ie8 oldie no-js">
+<![endif]-->
+<!--[if IE 9 ]>
+<html lang="en-gb" class="isie ie9 no-js">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]>
+<!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<![endif]-->
+  <title>smashIt | Homepage</title>
+  <meta name="description" content="This is SmashIt site">
+  <meta name="author" content="Folorun Tolulope">
+
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="smashIt | WeatherApp">
+  <meta name="apple-mobile-web-app-title" content="smashIt | WeatherApp">
+  <meta name="theme-color" content="#0eadf4">
+  <meta name="msapplication-navbutton-color" content="#0eadf4">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="/">
+
+  <link rel="icon" sizes="128x128" href="/images/touch/icon-128x128.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="/images/touch/icon-128x128.png">
+  <link rel="icon" sizes="192x192" href="icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/images/icons/pwa-192x192.png">
+  <link rel="icon" sizes="310x310" href="/images/icons/tile310x310.png">
+  <link rel="icon" sizes="512x512" href="/images/icons/pwa-512x512.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/images/icons/pwa-512x512.png">
+
+  <!--[if lt IE 9]>
+				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+  <!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet"> -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/beautify.css" />
+</head>
+
+<body id="home">
+  <div class="menu" id="menu">
+    <i class="fas fa-bars">X</i>
+  </div>
+  <nav class="nav active" id="nav">
+    <ul class="nav-list">
+      <li><a href="/index.html" class="active">Home</a></li>
+      <li><a href="/weather.html">Weather</a></li>
+      <li><a href="/about.html">About Us</a></li>
+      <li><a href="/contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <header class="header center" id="up">
+    <div class="header-content">
+      <div class="header-logo--box">
+        <a href="/"><img src="./images/smashIt.png" alt="Smash it logo"></a>
+      </div>
+      <div class="search-form center">
+        <form action="" id="search" class="form-tag">
+          <div class="form-group">
+            <label for="city">
+              <input type="text" placeholder="City Country" id="city" autofocus>
+            </label>
+          </div>
+          <button aria-label="search city" type="submit"><i class="fa fa-search fa-3x" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      <div class="heading center">
+        <h1>Event location: <span id="city-box"></span></h1>
+        <h2 id="country-box"></h2>
+        <div style="overflow-x: auto;">
+          <table class="city-condition" id="city-condition">
+
+          </table>
+        </div>
+
+      </div>
+      <div class="reset-weather">
+        <button class="reset-button btn" id="reset-weather">Update weather</button>
+      </div>
+      <div class="countdown-boxes center">
+        <h3>CountDown to SmashIt Event</h2>
+          <div class="countdown-box" id="days">
+            000 <span>DAYS</span>
+          </div>
+          <div class="countdown-box" id="hour">
+            00 <span>HRS</span>
+          </div>
+          <div class="countdown-box" id="minute">
+            00 <span>MIN</span>
+          </div>
+          <div class="countdown-box" id="second">
+            00 <span>SEC</span>
+          </div>
+      </div>
+
+    </div>
+  </header>
+  <section class="location-map" id="">
+    <div class="container">
+      <h2 class="center">Smash It Coming event location</h2>
+    </div>
+  </section>
+  <section class="map-container1" id="map">
+    <div class="map" id='map'></div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>Copyright <span id="get-year">2020</span> | All Rights Reserved. Coded by <a class="coded-by"
+          href="http://www.twitter.com/developer_tolu" target="_blank" rel="noopener">@developer_tolu</a>
+      </p>
+    </div>
+  </footer>
+  <div class="alert" id="alert">
+    <p id="alert-p">successfully added</p>
+  </div>
+  <div class="search-city" id="search-city">
+    <div class="close">X</div>
+    <div class="city">
+      <h3 id="searched-city" class="city-box"></h3>
+      <div class="time-deg">
+        <div class="description">
+          <p id="description"></p>
+        </div>
+        <div class="deg" id="deg">00 <sup>0</sup>C</div>
+      </div>
+    </div>
+    <div class="weather-icon">
+      <img src="" alt="weather icon" id="iconsrc">
+      <p id="searched-main">main</p>
+    </div>
+  </div>
+  <a href="#up">
+    <div class="up" id="go-up">
+      <i class="fas fa-arrow-up fa-sm"></i>
+    </div>
+  </a>
+
+  <style>
+    .search-city {
+      max-width: 500px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      border: 1px solid;
+      height: 250px;
+      position: fixed;
+      top: 150px;
+      left: 50%;
+      transform: translate(-50%, -200%);
+      color: #fff;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      transition: all .3s ease;
+    }
+
+    .search-city .close {
+      font-size: 2rem;
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    .weather-icon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 2rem;
+    }
+
+    .weather-icon p {
+      font-size: 1.9rem;
+    }
+
+    .description p {
+      font-size: 2rem;
+    }
+
+    .searched-country {
+      font-size: 1rem;
+      background: #0eadf4;
+      border-radius: 5px;
+    }
+  </style>
+  <script src="/js/utils.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+  <script src="js/life.js" type="text/javascript"></script>
+</body>
+
+</html>
