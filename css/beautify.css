@@ -204,8 +204,6 @@ p {
 
 .header-logo--box {
   margin-top: 35px;
-  width: 573px;
-  height: 195;
 }
 
 .header .countdown-boxes {
@@ -325,6 +323,14 @@ table,
   }
 }
 
+.weather-daily {
+  margin-top: 40px;
+}
+
+.weather-daily h2 {
+  font-size: 5rem;
+}
+
 @media only screen and (max-width: 400px) {
   .header .time-box {
     margin: 20px 10px;
@@ -335,6 +341,12 @@ table,
     font-size: 2rem;
     top: -2px;
     left: -16px;
+  }
+
+  .city-condition th,
+  .city-condition td {
+    padding: 4px;
+    font-size: 1.4rem;
   }
 }
 

@@ -121,8 +121,8 @@ const displayData = props => {
    <tr>
     <th>Humidity</th>
     <th>Weather</th>
-    <th>Temperature</th>
-    <th>Wind speed</th>
+    <th>Temp</th>
+    <th>WindSpeed</th>
   </tr>
     <tr>
       <td>${humidity}%</td>
