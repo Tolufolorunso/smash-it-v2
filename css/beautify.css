@@ -403,6 +403,17 @@ table,
 
 }
 
+@media only screen and (max-width: 400px) {
+  .weather__box {
+    height: 160px;
+  }
+
+  .weather__box--content {
+    font-size: 1.6rem;
+
+  }
+}
+
 .reset-weather {
   margin-top: 20px;
 }
