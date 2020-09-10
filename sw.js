@@ -1,4 +1,4 @@
-const staticCacheName = 'v30';
+const staticCacheName = 'v33';
 const filesToCache = [
 	'/',
 	'index.html',
