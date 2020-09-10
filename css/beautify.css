@@ -187,7 +187,7 @@ p {
 /* Header rules */
 
 .header {
-  background: url(../images/bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/storm.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 750px;
@@ -410,7 +410,8 @@ table,
 .reset-button {
   cursor: pointer;
   padding: 15px 25px;
-
+  color: #0b242f;
+  font-size: 1.7rem;
 }
 
 .reset-button:hover {
@@ -645,7 +646,7 @@ table,
 }
 
 .footer p {
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: #0eadf4;
 }
 
@@ -667,6 +668,7 @@ table,
 
 .up {
   position: fixed;
+  font-size: 2rem;
   right: 35px;
   top: 85%;
   width: 35px;
@@ -699,4 +701,51 @@ table,
   opacity: 0;
   border-radius: 3px;
   pointer-events: none;
+}
+
+.search-city {
+  max-width: 500px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid;
+  height: 250px;
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+
+.search-city .close {
+  font-size: 2rem;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.weather-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+.weather-icon p {
+  font-size: 1.9rem;
+}
+
+.description p {
+  font-size: 2rem;
+}
+
+.searched-country {
+  font-size: 1rem;
+  background: #0eadf4;
+  border-radius: 5px;
 }

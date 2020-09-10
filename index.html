@@ -36,8 +36,8 @@
   <!--[if lte IE 8]>
 		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
 	<![endif]-->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet"> -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+    rel="stylesheet">
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="css/beautify.css" />
 </head>
@@ -56,7 +56,8 @@
   <header class="header center" id="up">
     <div class="header-content">
       <div class="header-logo--box">
-        <a href="/"><img src="./images/SmashIt.svg" alt="Smash it logo"></a>
+        <!-- <a href="/"><img src="./images/SmashIt.svg" alt="Smash it logo"></a> -->
+        <h2>🆂🅼🅰🆂🅷-🅸🆃</h2>
       </div>
       <div class="search-form center">
         <form action="" id="search" class="form-tag">
@@ -135,60 +136,12 @@
   </div>
   <a href="#up">
     <div class="up" id="go-up">
-      <i class="fas fa-arrow-up fa-sm"></i>
+      <i class="fas fa-arrow-up fa-sm">^</i>
     </div>
   </a>
-
-  <style>
-    .search-city {
-      max-width: 500px;
-      width: 100%;
-      margin-right: auto;
-      margin-left: auto;
-      border: 1px solid;
-      height: 250px;
-      position: fixed;
-      top: 150px;
-      left: 50%;
-      transform: translate(-50%, -200%);
-      color: #fff;
-      background: rgba(0, 0, 0, 0.8);
-      box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
-      border-radius: 5px;
-      transition: all .3s ease;
-    }
-
-    .search-city .close {
-      font-size: 2rem;
-      position: absolute;
-      right: 10px;
-      cursor: pointer;
-    }
-
-    .weather-icon {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      font-size: 2rem;
-    }
-
-    .weather-icon p {
-      font-size: 1.9rem;
-    }
-
-    .description p {
-      font-size: 2rem;
-    }
-
-    .searched-country {
-      font-size: 1rem;
-      background: #0eadf4;
-      border-radius: 5px;
-    }
-  </style>
   <script src="/js/utils.js"></script>
   <script src="js/app.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
   <script src="js/life.js" type="text/javascript"></script>
 </body>
 

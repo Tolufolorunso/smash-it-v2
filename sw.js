@@ -1,4 +1,4 @@
-const staticCacheName = 'v5';
+const staticCacheName = 'v18';
 const filesToCache = [
 	'/',
 	'index.html',
@@ -7,18 +7,14 @@ const filesToCache = [
 	'/js/life.js',
 	'/js/utils.js',
 	'/css/beautify.css',
-	'/images/bg.jpg',
-	'/images/smashIt.png',
 	'/images/clouds.jpg',
-	'/images/dots.png',
 	'/images/evening.jpg',
 	'/images/flowers.jpg',
-	'/images/logo.png',
-	'/images/picture-136.png',
 	'/images/storm.jpg',
 	'/images/thunder.jpg',
 	'/images/Tolufolorunso.jpg',
-	'/images/tree-1.jpg'
+	'/images/tree-1.jpg',
+	'https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,500&display=swap'
 ];
 
 self.addEventListener('install', event => {
