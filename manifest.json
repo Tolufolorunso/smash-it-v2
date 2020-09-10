@@ -1,0 +1,31 @@
+{
+	"name": "Smash it",
+	"short_name": "Smash it",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#00405d",
+	"theme_color": "#0eadf4",
+	"orientation": "any",
+	"icons": [
+		{
+			"src": "./images/icons/pwa-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "./images/icons/pwa-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+	"lang": "en-US",
+	"description": "Smash it weather app to monitor New York weather for on coming event",
+	"scope": "/",
+	"serviceworker": {
+		"src": "sw.js",
+		"scope": "/"
+	},
+	"prefer_related_applications": false
+}
